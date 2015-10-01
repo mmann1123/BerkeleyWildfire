@@ -393,10 +393,19 @@ multi_grep_character <- function(find, inthis){ #returns location of multiple "f
   names(alldata2001_2025_PA2)
   names(alldata2026_2050_PA2)  
 
- 
+  # write out to file for Frank
+  #inMemory(alldata1976_2000[1])
+  #writeRaster(alldata1976_2000,'C://Users//mmann//Google Drive//Wildfire_share//StackOutputs//alldata1976_2000.tif')
+  #write.csv(names(alldata1976_2000),'C://Users//mmann//Google Drive//Wildfire_share//StackOutputs//alldata1976_2000.csv')
+  #writeRaster(alldata2001_2025_GA2,'C://Users//mmann//Google Drive//Wildfire_share//StackOutputs//alldata2001_2025_GA2.tif')
+  #write.csv(names(alldata2001_2025_GA2),'C://Users//mmann//Google Drive//Wildfire_share//StackOutputs//alldata2001_2025_GA2.csv')
+  #writeRaster(alldata2026_2050_GA2,'C://Users//mmann//Google Drive//Wildfire_share//StackOutputs//alldata2026_2050_GA2.tif')
+  #write.csv(names(alldata2026_2050_GA2),'C://Users//mmann//Google Drive//Wildfire_share//StackOutputs//alldata2026_2050_GA2.csv')
+  
+  
 
 #############################################################################
-# integrate past climate data into datastacks
+# integrate past climate data into datastacks  Only needed if using T-1 varaibles 
 #   for(j in  2:length(decade_group_names) ){   # starting with the second period loop through stacks 
 #       print("J SHOULD START AT 2 ")
 #       stack_names = ls(pattern="alldata")  # get all stacks in workspace
